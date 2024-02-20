@@ -1,3 +1,5 @@
 # Progetto_settimana_13
 
-npm run dev per l'avvio
+Per l'avvio => npm run dev
+
+© Giulio d'Alfonso
