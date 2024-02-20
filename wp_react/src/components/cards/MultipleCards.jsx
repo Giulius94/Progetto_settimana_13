@@ -24,7 +24,7 @@ export default function MultipleCards({ numPagina }) {
 
   }, [numPagina]);
 
-  console.log(articoli);
+  // console.log(articoli);
 
   return (
     <>

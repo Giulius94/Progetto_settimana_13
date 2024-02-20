@@ -1,9 +1,9 @@
 .singlePost img,
 .singlePost svg {
-  display: block; 
-  margin: auto; 
-  width: 70%;
-  height: auto; 
+  display: block; /* Sovrascrive qualsiasi altro display */
+  margin: auto; /* Centra l'immagine orizzontalmente */
+  width: 70%; /* Larghezza fissa */
+  height: auto; /* Mantiene l'aspetto dell'immagine */
 }
 
 .card {
@@ -18,8 +18,18 @@
 }
 
 .spinner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+
+h6 span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: aquamarine;
+}
+
+h6 span {
+    color: blue;
 }

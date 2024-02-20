@@ -7,6 +7,7 @@ import NotFoundPage from "./pages/NotFoundPage";
 import NavBar from "./components/navbar/NavBar";
 import ArticlePage from './pages/ArticlePage';
 import SearchPage from './pages/SearchPage';
+import TagPage from './pages/TagPage';
 
 
 
@@ -15,12 +16,15 @@ function App() {
   return (
     <BrowserRouter>
       <NavBar />
+      {/* <HeaderComp /> */}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/articolo/:indexID" element={<ArticlePage />} />
         <Route path="/search-result/:searchTerm" element={<SearchPage />} />
+        <Route path="/tag/:tagID/:idName" element={<TagPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
+      {/* <PlayerComp /> */}
     </BrowserRouter>
   );
 }

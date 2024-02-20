@@ -3,16 +3,18 @@ import MultipleCards from '../components/cards/MultipleCards';
 import { Pagination } from 'react-bootstrap';
 
 export default function HomePage() {
-    
-  // pagina corrente
+
+
+    // Stato per tenere traccia della pagina corrente
   const [activePage, setActivePage] = useState(1);
 
-  // Numero totale di pagine
+  // Numero totale di pagine, per semplicità lo imposto staticamente a 3
   const totalPages = 3;
 
   // Funzione per gestire il cambio di pagina
   const handlePageChange = (pageNumber) => {
     setActivePage(pageNumber);
+    // Qui puoi anche effettuare chiamate API o altre azioni necessarie quando cambia la pagina
   };
 
   // Genera gli elementi di paginazione dinamicamente
